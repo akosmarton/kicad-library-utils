@@ -62,7 +62,7 @@ class KicadMod(object):
         self.sexpr_data = sexpr_data
 
         # module name
-        self.name = self.sexpr_data[1]
+        self.name = str(self.sexpr_data[1])
 
         # module layer
         self.layer = self._getValue('layer', 'pth', 2)
